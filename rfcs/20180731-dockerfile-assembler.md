@@ -227,7 +227,7 @@ Another pattern that supports complicated Dockerfiles is to manually maintain
 many Dockerfiles that each call out to a common set of build scripts:
 
 ```dockerfile
-FROM ubuntu
+FROM ubuntu:24.10
 COPY install_scripts/ /bin
 RUN /bin/install_nvidia_dev.sh
 RUN /bin/install_python_dev.sh
